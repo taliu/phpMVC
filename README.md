@@ -1,7 +1,7 @@
 # phpMVC
 一个简单的php mvc框架（模拟asp.net mvc）。
 
-1. 在controllers中添加控制器类： xxxController.class.php ,如HomeController.class
+a. 在controllers中添加控制器类： xxxController.class.php ,如HomeController.class
 ```
 class HomeController extends ControllerBase
 {
@@ -16,7 +16,7 @@ class HomeController extends ControllerBase
 }
 ```
 
-2. 在视图中添加views\xxx\actionName.php,如添加\views\home\index.php
+b. 在视图中添加views\xxx\actionName.php,如添加\views\home\index.php
 ```
 <?php
 echo "<h1>welcome!</h1>";
@@ -27,7 +27,7 @@ echo '<a href="/home/Logout">退出</a>';
 ?>
 ```
 
-3. 在RouteConfig.php中配置路由：
+c. 在RouteConfig.php中配置路由：
 ```
 <?php
 RouteTable::register("default",
